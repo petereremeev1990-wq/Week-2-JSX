@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Fonts: Inter 400–700 from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles: pricing cards layout and theme -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Page chrome: version label, fixed at top center -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Layout: pricing cards in a row -->
     <div class="cards-container">
+
+        <!-- Card: Hobby (free tier) -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
                 <p class="card-price">
                     <span class="card-price-amount">Free</span>
                 </p>
+                <!-- Features: included with Hobby -->
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
                     <ul class="features-list">
@@ -36,8 +46,11 @@
                     </ul>
                 </div>
             </div>
+            <!-- CTA: secondary (neutral) download -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Card: Pro ($20/mo) -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
@@ -45,6 +58,7 @@
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
+                <!-- Features: Hobby plus Pro extras -->
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
                     <ul class="features-list">
@@ -67,8 +81,67 @@
                     </ul>
                 </div>
             </div>
+            <!-- CTA: primary (dark) upgrade -->
             <button class="download-button primary">Get Pro</button>
         </div>
+
+        <!-- Card: Team ($50/mo) -->
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Org</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">$30</span>
+                    <span class="card-price-period">/mo.</span>
+                </p>
+                <!-- Features: Pro plus Org extras -->
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SSO and SAML
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- CTA: primary (dark) upgrade -->
+            <button class="download-button primary">Get Org</button>
+        </div>
+
+        <!-- Card: Enterprise (custom / teams) -->
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                </p>
+                <!-- Features: Pro plus org extras -->
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SSO and SAML
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Admin and usage controls
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Invoice billing
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- CTA: primary (dark) sales — same style as Pro -->
+            <button class="download-button primary">Contact Sales</button>
+        </div>
+
     </div>
 </body>
 </html>
